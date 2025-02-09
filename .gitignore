@@ -1,0 +1,19 @@
+# Node.js dependencies
+/node_modules/
+
+# ملفات البيئة
+.env
+
+# سجلات العمليات
+*.log
+
+# ملفات النظام الخاص بالنظام التشغيلي
+.DS_Store
+Thumbs.db
+
+# ملفات IDE و محررات النصوص
+.vscode/
+.idea/
+
+# ملفات بناء
+/dist/
