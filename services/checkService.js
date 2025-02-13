@@ -27,6 +27,8 @@ module.exports = async (ctx) => {
       }
 
       const referralLink = generateReferralLink(from.id);
+      user.referralLink = referralLink;
+      await user.save();
       await ctx.replyWithHTML(`
         🎉 Your membership has been successfully confirmed!
         🔗 Your referral link: <code>${referralLink}</code>
